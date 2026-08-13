@@ -1,0 +1,13 @@
+# Separate project — contains personal financial data, must not be published
+bunq-analyza/
+
+# Local tooling
+.claude/
+
+# OS / editor cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+.vscode/
+.idea/
