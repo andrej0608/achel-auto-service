@@ -202,11 +202,13 @@ const translations = {
     footer: {
       rights: 'Alle rechten voorbehouden.',
       privacy: 'Privacybeleid',
-      terms: 'Algemene voorwaarden'
+      terms: 'Algemene voorwaarden',
+      demo:
+        'Demo website — bedrijfsgegevens, prijzen, reviews en statistieken zijn fictief en uitsluitend bedoeld ter demonstratie.'
     },
     legal: {
       demoNote:
-        'Let op: dit is voorbeeldtekst voor demonstratiedoeleinden. Laat deze pagina nakijken door een jurist voor u online gaat.',
+        'Dit is een demo website. De bedrijfsgegevens en juridische teksten op deze pagina zijn uitsluitend voorbeeldinhoud en vertegenwoordigen geen echt bedrijf. Laat deze pagina nakijken door een jurist voor u online gaat.',
       updated: 'Laatst bijgewerkt: augustus 2026'
     },
     privacy: {
@@ -448,11 +450,13 @@ const translations = {
     footer: {
       rights: 'All rights reserved.',
       privacy: 'Privacy Policy',
-      terms: 'Terms & Conditions'
+      terms: 'Terms & Conditions',
+      demo:
+        'Demo website — business details, prices, reviews and statistics are fictional and for demonstration purposes only.'
     },
     legal: {
       demoNote:
-        'Please note: this is sample text for demonstration purposes. Have this page reviewed by a lawyer before going live.',
+        'This is a demo website. The business information and legal text on this page are sample content only and do not represent a real company. Have this page reviewed by a lawyer before going live.',
       updated: 'Last updated: August 2026'
     },
     privacy: {

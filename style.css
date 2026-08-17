@@ -760,6 +760,16 @@ ul { list-style: none; }
 }
 .footer-inner > p { color: var(--muted); font-size: 0.84rem; }
 
+/* Demo disclaimer — deliberately quieter than the rest of the footer. */
+.footer-demo {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  color: #7a8089;
+  font-size: 0.74rem;
+  line-height: 1.6;
+}
+
 .footer-links { display: flex; gap: 22px; flex-wrap: wrap; }
 .footer-links a {
   color: var(--muted);
