@@ -1,69 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Achel Auto Service | Professional Car Repair in Achel</title>
+<title>Premium Auto Service | Professionele autoherstellingen in Brussel</title>
+<meta name="description" content="Betrouwbaar onderhoud, diagnose en herstellingen voor alle automerken in Brussel. Eerlijke prijzen, snelle service en 24 maanden garantie.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="home">
 
 <header class="header">
   <div class="container header-inner">
-    <a href="#" class="logo">Achel <span>Auto Service</span></a>
+    <a href="#" class="logo">Premium <span>Auto Service</span></a>
     <nav class="nav" id="nav">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#gallery">Workshop</a>
-      <a href="#about">About</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#services" data-i18n="nav.services">Diensten</a>
+      <a href="#pricing" data-i18n="nav.pricing">Prijzen</a>
+      <a href="#gallery" data-i18n="nav.gallery">Werkplaats</a>
+      <a href="#about" data-i18n="nav.about">Over ons</a>
+      <a href="#reviews" data-i18n="nav.reviews">Beoordelingen</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
-    <a href="#contact" class="btn btn-primary nav-cta">Book Now</a>
-    <button class="burger" id="burger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header-actions">
+      <div class="lang-switch" role="group" data-i18n-aria-label="nav.language" aria-label="Taal">
+        <button type="button" class="lang-btn" data-lang="nl" aria-pressed="true">NL</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="#contact" class="btn btn-primary nav-cta" data-i18n="nav.book">Afspraak maken</a>
+      <button class="burger" id="burger" aria-expanded="false" data-i18n-aria-label="nav.menu" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
 <section class="hero" id="home">
   <div class="container hero-inner">
     <div class="hero-text">
-      <p class="eyebrow">Achel, Belgium</p>
-      <h1>Professional Car <span>Repair</span> in Achel</h1>
-      <p class="hero-lead">
-        Reliable maintenance, diagnostics and repairs for all vehicle brands —
-        fast, honest and at a fair price. We take care of your car
-        so you can focus on the road.
+      <p class="eyebrow" data-i18n="hero.eyebrow">Brussel, België</p>
+      <h1 data-i18n-html="hero.title">Professionele auto<span>herstellingen</span> in Brussel</h1>
+      <p class="hero-lead" data-i18n="hero.lead">
+        Betrouwbaar onderhoud, diagnose en herstellingen voor alle automerken — snel, eerlijk en aan een
+        correcte prijs. Wij zorgen voor uw wagen, zodat u zich op de weg kunt concentreren.
       </p>
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Book Appointment</a>
-        <a href="tel:+3211123456" class="btn btn-outline">Call Now</a>
+        <a href="#contact" class="btn btn-primary" data-i18n="hero.book">Afspraak maken</a>
+        <a href="tel:+3221234567" class="btn btn-outline" data-i18n="hero.call">Bel ons nu</a>
       </div>
     </div>
-    <div class="hero-art" aria-hidden="true">
+    <div class="hero-art">
       <div class="hero-card">
         <div class="hero-card-row">
           <span class="dot"></span>
           <div>
-            <strong>Open Now</strong>
-            <small>Mon – Fri: 08:00 – 18:00</small>
+            <strong data-i18n="hero.openTitle">Nu open</strong>
+            <small data-i18n="hero.openHours">Ma – Vr: 08:00 – 18:00</small>
           </div>
         </div>
         <div class="hero-card-row">
           <span class="icon">⚙️</span>
           <div>
-            <strong>10+ Years of Experience</strong>
-            <small>Certified mechanics</small>
+            <strong data-i18n="hero.expTitle">10+ jaar ervaring</strong>
+            <small data-i18n="hero.expText">Gecertificeerde mecaniciens</small>
           </div>
         </div>
         <div class="hero-card-row">
           <span class="icon">✅</span>
           <div>
-            <strong>24 Months Warranty</strong>
-            <small>On parts and labour</small>
+            <strong data-i18n="hero.warrantyTitle">24 maanden garantie</strong>
+            <small data-i18n="hero.warrantyText">Op onderdelen en werkuren</small>
           </div>
         </div>
       </div>
@@ -73,52 +82,52 @@
 
 <section class="services" id="services">
   <div class="container">
-    <p class="section-eyebrow">Services</p>
-    <h2 class="section-title">Everything your car needs, under one roof</h2>
-    <p class="section-lead">
-      From routine maintenance to complex repairs, for every brand.
+    <p class="section-eyebrow" data-i18n="services.eyebrow">Diensten</p>
+    <h2 class="section-title" data-i18n="services.title">Alles wat uw auto nodig heeft, onder één dak</h2>
+    <p class="section-lead" data-i18n="services.lead">
+      Van gewoon onderhoud tot complexe herstellingen, voor elk merk.
     </p>
 
     <div class="services-grid">
       <div class="service-card">
         <div class="service-icon">🛢️</div>
-        <h3>Oil Change</h3>
-        <p>Fast oil and filter service with quality lubricants.</p>
+        <h3 data-i18n="services.oilTitle">Olieverversing</h3>
+        <p data-i18n="services.oilText">Snelle olie- en filterservice met kwaliteitssmeermiddelen.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">🛑</div>
-        <h3>Brake Service</h3>
-        <p>Discs, pads and brake fluid checked and replaced.</p>
+        <h3 data-i18n="services.brakeTitle">Remmenservice</h3>
+        <p data-i18n="services.brakeText">Schijven, remblokken en remvloeistof gecontroleerd en vervangen.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">💻</div>
-        <h3>Engine Diagnostics</h3>
-        <p>Computer diagnostics for every warning light.</p>
+        <h3 data-i18n="services.diagTitle">Motordiagnose</h3>
+        <p data-i18n="services.diagText">Computerdiagnose voor elk waarschuwingslampje.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">⛓️</div>
-        <h3>Timing Belt</h3>
-        <p>Belt and water pump replacement done by the book.</p>
+        <h3 data-i18n="services.beltTitle">Distributieriem</h3>
+        <p data-i18n="services.beltText">Riem en waterpomp vervangen volgens de voorschriften.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">⚙️</div>
-        <h3>Clutch Replacement</h3>
-        <p>Complete clutch kits for all vehicle brands.</p>
+        <h3 data-i18n="services.clutchTitle">Koppeling vervangen</h3>
+        <p data-i18n="services.clutchText">Volledige koppelingssets voor alle automerken.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">❄️</div>
-        <h3>Air Conditioning</h3>
-        <p>Refill, disinfection and leak detection.</p>
+        <h3 data-i18n="services.acTitle">Airco</h3>
+        <p data-i18n="services.acText">Bijvullen, ontsmetten en lekdetectie.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">🛞</div>
-        <h3>Tire Service</h3>
-        <p>Mounting, balancing, alignment and storage.</p>
+        <h3 data-i18n="services.tireTitle">Bandenservice</h3>
+        <p data-i18n="services.tireText">Monteren, uitbalanceren, uitlijnen en stockage.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">🔋</div>
-        <h3>Battery Replacement</h3>
-        <p>Testing and same-day battery replacement.</p>
+        <h3 data-i18n="services.batteryTitle">Batterij vervangen</h3>
+        <p data-i18n="services.batteryText">Testen en batterij vervangen dezelfde dag.</p>
       </div>
     </div>
   </div>
@@ -126,97 +135,100 @@
 
 <section class="pricing" id="pricing">
   <div class="container">
-    <p class="section-eyebrow">Pricing</p>
-    <h2 class="section-title">Simple, transparent prices</h2>
-    <p class="section-lead">
-      Here's an overview of our most common services. Final price may vary depending on your vehicle's make and model.
+    <p class="section-eyebrow" data-i18n="pricing.eyebrow">Prijzen</p>
+    <h2 class="section-title" data-i18n="pricing.title">Eenvoudige, transparante prijzen</h2>
+    <p class="section-lead" data-i18n="pricing.lead">
+      Hier vindt u een overzicht van onze meest gevraagde diensten. De uiteindelijke prijs kan variëren
+      naargelang het merk en model van uw wagen.
     </p>
 
     <div class="pricing-grid">
       <div class="pricing-card">
         <div class="pricing-card-header">
           <span class="pricing-icon">🛢️</span>
-          <h3>Oil Change</h3>
+          <h3 data-i18n="pricing.oil">Olieverversing</h3>
         </div>
         <ul class="pricing-list">
-          <li><span>Standard Oil Change</span><strong>$39</strong></li>
-          <li><span>Full Synthetic Oil Change</span><strong>$59</strong></li>
-          <li><span>Oil Filter Replacement</span><strong>$15</strong></li>
+          <li><span data-i18n="pricing.oil1">Standaard olieverversing</span><strong>$39</strong></li>
+          <li><span data-i18n="pricing.oil2">Volledig synthetische olieverversing</span><strong>$59</strong></li>
+          <li><span data-i18n="pricing.oil3">Oliefilter vervangen</span><strong>$15</strong></li>
         </ul>
       </div>
 
       <div class="pricing-card">
         <div class="pricing-card-header">
           <span class="pricing-icon">💻</span>
-          <h3>Diagnostics</h3>
+          <h3 data-i18n="pricing.diag">Diagnose</h3>
         </div>
         <ul class="pricing-list">
-          <li><span>Basic Computer Diagnostics</span><strong>$49</strong></li>
-          <li><span>Full Vehicle Diagnostic Scan</span><strong>$79</strong></li>
-          <li><span>Check Engine Light Diagnosis</span><strong>$59</strong></li>
+          <li><span data-i18n="pricing.diag1">Basis computerdiagnose</span><strong>$49</strong></li>
+          <li><span data-i18n="pricing.diag2">Volledige diagnosescan</span><strong>$79</strong></li>
+          <li><span data-i18n="pricing.diag3">Motorstoringslampje uitlezen</span><strong>$59</strong></li>
         </ul>
       </div>
 
       <div class="pricing-card">
         <div class="pricing-card-header">
           <span class="pricing-icon">🛑</span>
-          <h3>Brake Repair</h3>
+          <h3 data-i18n="pricing.brake">Remmen</h3>
         </div>
         <ul class="pricing-list">
-          <li><span>Brake Pad Replacement (per axle)</span><strong>$89</strong></li>
-          <li><span>Brake Disc Replacement (per axle)</span><strong>$149</strong></li>
-          <li><span>Brake Fluid Flush</span><strong>$49</strong></li>
+          <li><span data-i18n="pricing.brake1">Remblokken vervangen (per as)</span><strong>$89</strong></li>
+          <li><span data-i18n="pricing.brake2">Remschijven vervangen (per as)</span><strong>$149</strong></li>
+          <li><span data-i18n="pricing.brake3">Remvloeistof verversen</span><strong>$49</strong></li>
         </ul>
       </div>
 
       <div class="pricing-card">
         <div class="pricing-card-header">
           <span class="pricing-icon">❄️</span>
-          <h3>AC Service</h3>
+          <h3 data-i18n="pricing.ac">Airco</h3>
         </div>
         <ul class="pricing-list">
-          <li><span>AC System Inspection</span><strong>$39</strong></li>
-          <li><span>AC Refrigerant Recharge</span><strong>$69</strong></li>
-          <li><span>Full AC Service (clean + recharge)</span><strong>$99</strong></li>
+          <li><span data-i18n="pricing.ac1">Aircocontrole</span><strong>$39</strong></li>
+          <li><span data-i18n="pricing.ac2">Airco bijvullen</span><strong>$69</strong></li>
+          <li><span data-i18n="pricing.ac3">Volledige aircoservice (reinigen + bijvullen)</span><strong>$99</strong></li>
         </ul>
       </div>
     </div>
-    <p class="pricing-note">* Prices shown are starting prices and may vary depending on vehicle model and condition.</p>
+    <p class="pricing-note" data-i18n="pricing.note">
+      * De vermelde prijzen zijn startprijzen en kunnen variëren naargelang het model en de staat van uw wagen.
+    </p>
   </div>
 </section>
 
 <section class="gallery" id="gallery">
   <div class="container">
-    <p class="section-eyebrow">Our Workshop</p>
-    <h2 class="section-title">Take a look inside</h2>
-    <p class="section-lead">
-      A glimpse of our shop, our tools and how we take care of every vehicle that comes through the door.
+    <p class="section-eyebrow" data-i18n="gallery.eyebrow">Onze werkplaats</p>
+    <h2 class="section-title" data-i18n="gallery.title">Een kijkje binnen</h2>
+    <p class="section-lead" data-i18n="gallery.lead">
+      Een blik op onze werkplaats, ons gereedschap en hoe wij elke wagen behandelen die bij ons binnenkomt.
     </p>
 
     <div class="gallery-grid">
       <figure class="gallery-card">
-        <img src="images/gallery-5.jpg" alt="Achel Auto Service garage exterior" loading="lazy">
-        <figcaption>Our garage</figcaption>
+        <img src="images/gallery-5.jpg" data-i18n-alt="gallery.alt1" alt="Vooraanzicht van de garage van Premium Auto Service" loading="lazy">
+        <figcaption data-i18n="gallery.cap1">Onze garage</figcaption>
       </figure>
       <figure class="gallery-card">
-        <img src="images/gallery-1.jpg" alt="Mechanic working on a car engine" loading="lazy">
-        <figcaption>Hands-on repairs</figcaption>
+        <img src="images/gallery-1.jpg" data-i18n-alt="gallery.alt2" alt="Mecanicien werkt aan een automotor" loading="lazy">
+        <figcaption data-i18n="gallery.cap2">Herstellingen</figcaption>
       </figure>
       <figure class="gallery-card">
-        <img src="images/gallery-3.jpg" alt="Car connected to a computer diagnostics tool" loading="lazy">
-        <figcaption>Computer diagnostics</figcaption>
+        <img src="images/gallery-3.jpg" data-i18n-alt="gallery.alt3" alt="Diagnosecomputer aangesloten op een wagen" loading="lazy">
+        <figcaption data-i18n="gallery.cap3">Computerdiagnose</figcaption>
       </figure>
       <figure class="gallery-card">
-        <img src="images/gallery-2.jpg" alt="Close-up of a brake disc replacement" loading="lazy">
-        <figcaption>Brake service</figcaption>
+        <img src="images/gallery-2.jpg" data-i18n-alt="gallery.alt4" alt="Close-up van het vervangen van een remschijf" loading="lazy">
+        <figcaption data-i18n="gallery.cap4">Remmenservice</figcaption>
       </figure>
       <figure class="gallery-card">
-        <img src="images/gallery-4.jpg" alt="Tire service and wheel alignment equipment" loading="lazy">
-        <figcaption>Tire &amp; alignment</figcaption>
+        <img src="images/gallery-4.jpg" data-i18n-alt="gallery.alt5" alt="Bandenservice en uitlijnapparatuur" loading="lazy">
+        <figcaption data-i18n="gallery.cap5">Banden &amp; uitlijning</figcaption>
       </figure>
       <figure class="gallery-card">
-        <img src="images/gallery-6.jpg" alt="Detail of an oil change" loading="lazy">
-        <figcaption>Oil change</figcaption>
+        <img src="images/gallery-6.jpg" data-i18n-alt="gallery.alt6" alt="Detail van een olieverversing" loading="lazy">
+        <figcaption data-i18n="gallery.cap6">Olieverversing</figcaption>
       </figure>
     </div>
   </div>
@@ -225,39 +237,38 @@
 <section class="about" id="about">
   <div class="container about-inner">
     <div class="about-text">
-      <p class="section-eyebrow">About Us</p>
-      <h2 class="section-title">A neighbourhood garage with dealer-level standards</h2>
-      <p>
-        Achel Auto Service started in 2015 as a two-man workshop on the edge of Achel.
-        What began with oil changes for neighbours grew into a fully equipped garage
-        trusted by families and small businesses across Noord-Limburg.
+      <p class="section-eyebrow" data-i18n="about.eyebrow">Over ons</p>
+      <h2 class="section-title" data-i18n="about.title">Een buurtgarage met het niveau van een concessie</h2>
+      <p data-i18n="about.p1">
+        Premium Auto Service startte in 2015 als een garage met twee man aan de rand van Brussel. Wat begon
+        met olieverversingen voor de buren, groeide uit tot een volledig uitgeruste garage waar gezinnen en
+        zelfstandigen uit heel de Brusselse regio op rekenen.
       </p>
-      <p>
-        We still work the way we did on day one: honest advice, a clear price before
-        we start, and a car that leaves the workshop safe. Our mechanics train
-        continuously on new engine and hybrid technology, so your car gets modern
-        know-how with old-fashioned service.
+      <p data-i18n="about.p2">
+        We werken nog altijd zoals op dag één: eerlijk advies, een duidelijke prijs vooraf en een wagen die
+        veilig de werkplaats verlaat. Onze mecaniciens volgen voortdurend opleidingen over nieuwe motor- en
+        hybridetechnologie.
       </p>
       <ul class="about-list">
-        <li><span>✔</span> Experienced mechanics with decades of combined workshop experience</li>
-        <li><span>✔</span> Transparent pricing — a clear quote before we touch your car</li>
-        <li><span>✔</span> Fast service — most repairs finished the same day</li>
-        <li><span>✔</span> Modern, brand-level diagnostic equipment</li>
-        <li><span>✔</span> 24 months warranty on parts and labour</li>
+        <li><span>✔</span><span data-i18n="about.li1">Ervaren mecaniciens met tientallen jaren werkplaatservaring</span></li>
+        <li><span>✔</span><span data-i18n="about.li2">Transparante prijzen — een duidelijke offerte voor we beginnen</span></li>
+        <li><span>✔</span><span data-i18n="about.li3">Snelle service — de meeste herstellingen klaar dezelfde dag</span></li>
+        <li><span>✔</span><span data-i18n="about.li4">Moderne diagnoseapparatuur op merkniveau</span></li>
+        <li><span>✔</span><span data-i18n="about.li5">24 maanden garantie op onderdelen en werkuren</span></li>
       </ul>
     </div>
     <div class="about-stats">
       <div class="stat-card">
         <strong>10+</strong>
-        <span>years experience</span>
+        <span data-i18n="about.stat1">jaar ervaring</span>
       </div>
       <div class="stat-card">
         <strong>3000+</strong>
-        <span>cars repaired</span>
+        <span data-i18n="about.stat2">herstelde wagens</span>
       </div>
       <div class="stat-card">
         <strong>98%</strong>
-        <span>happy customers</span>
+        <span data-i18n="about.stat3">tevreden klanten</span>
       </div>
     </div>
   </div>
@@ -265,21 +276,21 @@
 
 <section class="reviews" id="reviews">
   <div class="container">
-    <p class="section-eyebrow">Reviews</p>
-    <h2 class="section-title">What our customers say</h2>
+    <p class="section-eyebrow" data-i18n="reviews.eyebrow">Beoordelingen</p>
+    <h2 class="section-title" data-i18n="reviews.title">Wat onze klanten zeggen</h2>
 
     <div class="reviews-grid">
       <figure class="review-card">
-        <blockquote>“My Golf had a mystery warning light two other garages could not solve. Here they found it in an hour and the price was exactly what was quoted.”</blockquote>
-        <figcaption><strong>Kevin Vanheel</strong><span>Achel</span></figcaption>
+        <blockquote data-i18n="reviews.q1">„Mijn Golf had een raar waarschuwingslampje dat twee andere garages niet konden oplossen. Hier vonden ze het binnen het uur en de prijs was exact zoals afgesproken.”</blockquote>
+        <figcaption><strong>Kevin Vanheel</strong><span data-i18n="reviews.c1">Brussel</span></figcaption>
       </figure>
       <figure class="review-card">
-        <blockquote>“Brought my Peugeot in for brakes and a service. Friendly people, clear explanation in plain language and the car was ready the same afternoon.”</blockquote>
-        <figcaption><strong>Marleen Dieltjens</strong><span>Hamont</span></figcaption>
+        <blockquote data-i18n="reviews.q2">„Mijn Peugeot binnengebracht voor de remmen en een onderhoud. Vriendelijke mensen, duidelijke uitleg en de wagen stond dezelfde namiddag klaar.”</blockquote>
+        <figcaption><strong>Marleen Dieltjens</strong><span data-i18n="reviews.c2">Schaarbeek</span></figcaption>
       </figure>
       <figure class="review-card">
-        <blockquote>“Timing belt done on my Passat for a fair price. They showed me the old parts and gave a written warranty. This is now our family garage.”</blockquote>
-        <figcaption><strong>Tom Geerts</strong><span>Neerpelt</span></figcaption>
+        <blockquote data-i18n="reviews.q3">„Distributieriem van mijn Passat vervangen aan een eerlijke prijs. Ze toonden mij de oude onderdelen en gaven schriftelijke garantie. Dit is nu onze vaste garage.”</blockquote>
+        <figcaption><strong>Tom Geerts</strong><span data-i18n="reviews.c3">Elsene</span></figcaption>
       </figure>
     </div>
   </div>
@@ -287,29 +298,29 @@
 
 <section class="faq" id="faq">
   <div class="container">
-    <p class="section-eyebrow">FAQ</p>
-    <h2 class="section-title">Frequently asked questions</h2>
+    <p class="section-eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+    <h2 class="section-title" data-i18n="faq.title">Veelgestelde vragen</h2>
 
     <div class="faq-list">
       <details class="faq-item">
-        <summary>Do I need an appointment?</summary>
-        <p>For repairs and maintenance we work by appointment so your car is handled without waiting. For a quick check, a flat tire or a battery test you can also drop by during opening hours.</p>
+        <summary><span data-i18n="faq.q1">Moet ik een afspraak maken?</span></summary>
+        <p data-i18n="faq.a1">Voor herstellingen en onderhoud werken we op afspraak, zo staat uw wagen niet nodeloos te wachten. Voor een snelle controle, een platte band of een batterijtest mag u ook gewoon binnenspringen tijdens de openingsuren.</p>
       </details>
       <details class="faq-item">
-        <summary>Which car brands do you repair?</summary>
-        <p>All brands. Our diagnostic equipment supports European, Japanese and Korean makes, including most hybrid vehicles.</p>
+        <summary><span data-i18n="faq.q2">Welke automerken herstellen jullie?</span></summary>
+        <p data-i18n="faq.a2">Alle merken. Onze diagnoseapparatuur ondersteunt Europese, Japanse en Koreaanse wagens, inclusief de meeste hybrides.</p>
       </details>
       <details class="faq-item">
-        <summary>Does a repair here affect my manufacturer warranty?</summary>
-        <p>No. Under European block exemption rules you can service your car at an independent garage. We use manufacturer-approved parts and stamp your service book.</p>
+        <summary><span data-i18n="faq.q3">Verlies ik mijn fabrieksgarantie bij een herstelling hier?</span></summary>
+        <p data-i18n="faq.a3">Neen. Volgens de Europese regelgeving mag u uw wagen laten onderhouden bij een onafhankelijke garage. Wij gebruiken onderdelen van fabrikantkwaliteit en stempelen uw onderhoudsboekje af.</p>
       </details>
       <details class="faq-item">
-        <summary>How much does a repair cost?</summary>
-        <p>You always receive a clear quote before we start. If we discover extra work during the repair, we call you first and never proceed without your approval.</p>
+        <summary><span data-i18n="faq.q4">Hoeveel kost een herstelling?</span></summary>
+        <p data-i18n="faq.a4">U krijgt altijd een duidelijke offerte voor we starten. Ontdekken we tijdens de herstelling extra werk, dan bellen we u eerst en doen we niets zonder uw akkoord.</p>
       </details>
       <details class="faq-item">
-        <summary>Can I get a replacement car?</summary>
-        <p>Yes, we have a limited number of courtesy cars available for longer repairs. Please mention it when booking your appointment.</p>
+        <summary><span data-i18n="faq.q5">Kan ik een vervangwagen krijgen?</span></summary>
+        <p data-i18n="faq.a5">Ja, we hebben een beperkt aantal vervangwagens beschikbaar voor langere herstellingen. Vermeld het even bij het maken van uw afspraak.</p>
       </details>
     </div>
   </div>
@@ -318,88 +329,125 @@
 <section class="contact" id="contact">
   <div class="container contact-inner">
     <div class="contact-info">
-      <p class="section-eyebrow">Contact</p>
-      <h2 class="section-title">Book your appointment</h2>
-      <p class="section-lead">
-        Call us or send a message and we get back to you the same working day.
+      <p class="section-eyebrow" data-i18n="contact.eyebrow">Contact</p>
+      <h2 class="section-title" data-i18n="contact.title">Maak uw afspraak</h2>
+      <p class="section-lead" data-i18n="contact.lead">
+        Bel ons of stuur een bericht en we nemen dezelfde werkdag contact met u op.
       </p>
+
       <div class="contact-detail">
         <span class="icon">📍</span>
         <div>
-          <strong>Address</strong>
-          <p><a href="https://maps.app.goo.gl/SANXDvoTtjSzVmHF7" target="_blank" rel="noopener">Dorpsstraat 9, 3930 Achel</a></p>
+          <strong data-i18n="contact.address">Adres</strong>
+          <p>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Avenue+Exemple+24%2C+1000+Bruxelles%2C+Belgium"
+               target="_blank" rel="noopener noreferrer">Avenue Exemple 24, 1000 Bruxelles</a>
+          </p>
         </div>
       </div>
+
       <div class="contact-detail">
         <span class="icon">📞</span>
         <div>
-          <strong>Phone</strong>
-          <p><a href="tel:+3211123456">+32 11 12 34 56</a></p>
+          <strong data-i18n="contact.phone">Telefoon</strong>
+          <p><a href="tel:+3221234567">+32 2 123 45 67</a></p>
         </div>
       </div>
+
+      <div class="contact-detail">
+        <span class="icon icon-whatsapp">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+          </svg>
+        </span>
+        <div>
+          <strong data-i18n="contact.whatsapp">WhatsApp</strong>
+          <p><a href="https://wa.me/32470123456" target="_blank" rel="noopener noreferrer">+32 470 12 34 56</a></p>
+        </div>
+      </div>
+
       <div class="contact-detail">
         <span class="icon">✉️</span>
         <div>
-          <strong>Email</strong>
-          <p><a href="mailto:info@achelautoservice.be">info@achelautoservice.be</a></p>
+          <strong data-i18n="contact.email">E-mail</strong>
+          <p><a href="mailto:info@brusselsautoservice.be">info@brusselsautoservice.be</a></p>
         </div>
       </div>
+
       <div class="contact-detail">
         <span class="icon">🕒</span>
         <div>
-          <strong>Opening Hours</strong>
-          <p>Mon – Fri: 08:00 – 18:00<br>Saturday: 09:00 – 13:00<br>Sunday: Closed</p>
+          <strong data-i18n="contact.hours">Openingsuren</strong>
+          <p data-i18n-html="contact.hoursText">Ma – Vr: 08:00 – 18:00<br>Zaterdag: 09:00 – 13:00<br>Zondag: gesloten</p>
         </div>
       </div>
+
       <div class="contact-map">
         <iframe
-          src="https://www.google.com/maps?q=Dorpsstraat+9,+3930+Achel,+Belgium&t=m&z=15&output=embed&iwloc=near"
-          title="Achel Auto Service location"
+          src="https://www.google.com/maps?q=Avenue+Exemple+24,+1000+Bruxelles,+Belgium&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"
+          data-i18n-title="contact.mapTitle"
+          title="Locatie van Premium Auto Service in Brussel"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
     <form class="contact-form" id="contact-form" novalidate>
-      <h3>Send us a message</h3>
+      <h3 data-i18n="contact.formTitle">Stuur ons een bericht</h3>
 
       <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <label for="name" data-i18n="contact.name">Naam</label>
+        <input type="text" id="name" name="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="Uw naam" required>
         <span class="error-message" id="name-error"></span>
       </div>
 
       <div class="form-group">
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" name="phone" placeholder="+32 ..." required>
+        <label for="phone" data-i18n="contact.phoneLabel">Telefoon</label>
+        <input type="tel" id="phone" name="phone" data-i18n-placeholder="contact.phonePlaceholder" placeholder="+32 ..." required>
         <span class="error-message" id="phone-error"></span>
       </div>
 
       <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <label for="email" data-i18n="contact.emailLabel">E-mail</label>
+        <input type="email" id="email" name="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="u@voorbeeld.be" required>
         <span class="error-message" id="email-error"></span>
       </div>
 
       <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Tell us about your car and what it needs..." required></textarea>
+        <label for="message" data-i18n="contact.message">Bericht</label>
+        <textarea id="message" name="message" rows="5" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Vertel ons over uw wagen en wat er moet gebeuren..." required></textarea>
         <span class="error-message" id="message-error"></span>
       </div>
 
-      <button type="submit" class="btn btn-primary btn-block">Send Request</button>
-      <p class="form-success" id="form-success">Thanks! We received your request and will call you back shortly.</p>
+      <div class="form-consent">
+        <label class="consent-label" for="consent">
+          <input type="checkbox" id="consent" name="consent" required>
+          <span class="consent-box" aria-hidden="true"></span>
+          <span class="consent-text" data-i18n-html="contact.consent">
+            Ik heb het <a href="privacy.html">privacybeleid</a> gelezen en ga ermee akkoord.
+          </span>
+        </label>
+        <span class="error-message" id="consent-error"></span>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.submit">Aanvraag versturen</button>
+      <p class="form-success" id="form-success"></p>
     </form>
   </div>
 </section>
 
 <footer class="footer">
   <div class="container footer-inner">
-    <a href="#" class="logo">Achel <span>Auto Service</span></a>
-    <p>&copy; <span id="year"></span> Achel Auto Service. All rights reserved.</p>
+    <a href="#" class="logo">Premium <span>Auto Service</span></a>
+    <nav class="footer-links">
+      <a href="privacy.html" data-i18n="footer.privacy">Privacybeleid</a>
+      <a href="terms.html" data-i18n="footer.terms">Algemene voorwaarden</a>
+    </nav>
+    <p>&copy; <span id="year"></span> Premium Auto Service. <span data-i18n="footer.rights">Alle rechten voorbehouden.</span></p>
   </div>
 </footer>
 
+<script src="translations.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
